@@ -22,7 +22,8 @@
     "test:witnesses:browser": "pnpm build && node tests/witnesses.browser.mjs",
     "test:committee:browser": "pnpm build && node tests/committee.browser.mjs",
     "test:account:browser": "pnpm build && node tests/account-detail.browser.mjs",
-    "test:navigation:live": "pnpm build && node tests/navigation.browser.mjs"
+    "test:navigation:live": "pnpm build && node tests/navigation.browser.mjs",
+    "test:details:browser": "pnpm build && node tests/details.browser.mjs"
   },
   "dependencies": {
     "@open-graphene/chain-swaplock-api": "workspace:*",

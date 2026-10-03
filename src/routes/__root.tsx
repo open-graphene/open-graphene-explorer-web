@@ -19,7 +19,10 @@ export const Route = createRootRoute({
 function RootLayout() {
   const pathname = useLocation({ select: (location) => location.pathname });
   const referencePath =
-    pathname.startsWith("/explorer/") || pathname.startsWith("/account/")
+    pathname.startsWith("/explorer/") ||
+    pathname.startsWith("/account/") ||
+    pathname.startsWith("/block/") ||
+    pathname.startsWith("/asset/")
       ? pathname
       : "/explorer/blocks";
   return (

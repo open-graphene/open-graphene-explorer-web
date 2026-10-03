@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AccountAccountNameRouteImport } from './routes/account.$accountName'
+import { Route as AssetAssetNameRouteImport } from './routes/asset.$assetName'
+import { Route as BlockHeightRouteImport } from './routes/block.$height'
 import { Route as ExplorerAccountsRouteImport } from './routes/explorer.accounts'
 import { Route as ExplorerAssetsRouteImport } from './routes/explorer.assets'
 import { Route as ExplorerBlocksRouteImport } from './routes/explorer.blocks'
@@ -31,6 +33,16 @@ const AboutRoute = AboutRouteImport.update({
 const AccountAccountNameRoute = AccountAccountNameRouteImport.update({
   id: '/account/$accountName',
   path: '/account/$accountName',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AssetAssetNameRoute = AssetAssetNameRouteImport.update({
+  id: '/asset/$assetName',
+  path: '/asset/$assetName',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlockHeightRoute = BlockHeightRouteImport.update({
+  id: '/block/$height',
+  path: '/block/$height',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExplorerAccountsRoute = ExplorerAccountsRouteImport.update({
@@ -63,6 +75,8 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/account/$accountName': typeof AccountAccountNameRoute
+  '/asset/$assetName': typeof AssetAssetNameRoute
+  '/block/$height': typeof BlockHeightRoute
   '/explorer/accounts': typeof ExplorerAccountsRoute
   '/explorer/assets': typeof ExplorerAssetsRoute
   '/explorer/blocks': typeof ExplorerBlocksRoute
@@ -73,6 +87,8 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/account/$accountName': typeof AccountAccountNameRoute
+  '/asset/$assetName': typeof AssetAssetNameRoute
+  '/block/$height': typeof BlockHeightRoute
   '/explorer/accounts': typeof ExplorerAccountsRoute
   '/explorer/assets': typeof ExplorerAssetsRoute
   '/explorer/blocks': typeof ExplorerBlocksRoute
@@ -84,6 +100,8 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/account/$accountName': typeof AccountAccountNameRoute
+  '/asset/$assetName': typeof AssetAssetNameRoute
+  '/block/$height': typeof BlockHeightRoute
   '/explorer/accounts': typeof ExplorerAccountsRoute
   '/explorer/assets': typeof ExplorerAssetsRoute
   '/explorer/blocks': typeof ExplorerBlocksRoute
@@ -96,6 +114,8 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/account/$accountName'
+    | '/asset/$assetName'
+    | '/block/$height'
     | '/explorer/accounts'
     | '/explorer/assets'
     | '/explorer/blocks'
@@ -106,6 +126,8 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/account/$accountName'
+    | '/asset/$assetName'
+    | '/block/$height'
     | '/explorer/accounts'
     | '/explorer/assets'
     | '/explorer/blocks'
@@ -116,6 +138,8 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/account/$accountName'
+    | '/asset/$assetName'
+    | '/block/$height'
     | '/explorer/accounts'
     | '/explorer/assets'
     | '/explorer/blocks'
@@ -127,6 +151,8 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AccountAccountNameRoute: typeof AccountAccountNameRoute
+  AssetAssetNameRoute: typeof AssetAssetNameRoute
+  BlockHeightRoute: typeof BlockHeightRoute
   ExplorerAccountsRoute: typeof ExplorerAccountsRoute
   ExplorerAssetsRoute: typeof ExplorerAssetsRoute
   ExplorerBlocksRoute: typeof ExplorerBlocksRoute
@@ -155,6 +181,20 @@ declare module '@tanstack/react-router' {
       path: '/account/$accountName'
       fullPath: '/account/$accountName'
       preLoaderRoute: typeof AccountAccountNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/asset/$assetName': {
+      id: '/asset/$assetName'
+      path: '/asset/$assetName'
+      fullPath: '/asset/$assetName'
+      preLoaderRoute: typeof AssetAssetNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/block/$height': {
+      id: '/block/$height'
+      path: '/block/$height'
+      fullPath: '/block/$height'
+      preLoaderRoute: typeof BlockHeightRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/explorer/accounts': {
@@ -199,6 +239,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AccountAccountNameRoute: AccountAccountNameRoute,
+  AssetAssetNameRoute: AssetAssetNameRoute,
+  BlockHeightRoute: BlockHeightRoute,
   ExplorerAccountsRoute: ExplorerAccountsRoute,
   ExplorerAssetsRoute: ExplorerAssetsRoute,
   ExplorerBlocksRoute: ExplorerBlocksRoute,

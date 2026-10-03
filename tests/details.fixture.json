@@ -1,0 +1,218 @@
+{
+  "block": {
+    "previous": "00000d15c05ed1970d08c1827b072c5e1bc04c0c",
+    "timestamp": "2026-08-18T20:33:06",
+    "witness": "1.6.1",
+    "transaction_merkle_root": "5d27526306bd8f1274fa03b091f56cec95fda476",
+    "extensions": [],
+    "witness_signature": "1f1c0706298057e55dcd44d522e08bad2e62055e322f8432f9a7c3e15806e43d4a670a96cbfb8a196f9376649b0d42b8478d80127dba2894af2cb25024e85fccf1",
+    "transactions": [
+      {
+        "ref_block_num": 3349,
+        "ref_block_prefix": 2547080896,
+        "expiration": "2026-08-18T20:34:03",
+        "operations": [
+          [
+            5,
+            {
+              "fee": { "amount": 51718, "asset_id": "1.3.0" },
+              "registrar": "1.2.100",
+              "referrer": "1.2.100",
+              "referrer_percent": 0,
+              "name": "acta-13bbcc46590ab6997bb4de40b86127a7",
+              "owner": {
+                "weight_threshold": 1,
+                "account_auths": [],
+                "key_auths": [
+                  ["BTS6fwm9frouzsxSzLFN2DRKKe6ESpipo1Kw6kkshdpWWRV5zT9EN", 1]
+                ],
+                "address_auths": []
+              },
+              "active": {
+                "weight_threshold": 1,
+                "account_auths": [],
+                "key_auths": [
+                  ["BTS8VHYNYyguEk282kxsHJBAQGzvGGfCM7i1xUi1ZBStLN7bP1Hjs", 1]
+                ],
+                "address_auths": []
+              },
+              "options": {
+                "memo_key": "BTS5V89TttkzyjgxvWEZ6yer4eKbXDW9raQufRPtvpCMzheNMUt1t",
+                "voting_account": "1.2.5",
+                "num_witness": 0,
+                "num_committee": 0,
+                "votes": [],
+                "extensions": []
+              },
+              "extensions": {}
+            }
+          ]
+        ],
+        "extensions": [],
+        "signatures": [
+          "2091f9abb3a8a069a47f6f4efd840c293b13326e7ceac9016b598633021730f6390e6187bfb2b7c037f9f4cad86997d85ec3d30807569c3f92f6d36f2a68629774"
+        ],
+        "operation_results": []
+      }
+    ]
+  },
+  "asset": {
+    "id": "1.3.0",
+    "symbol": "BTS",
+    "precision": 5,
+    "issuer": "1.2.3",
+    "options": {
+      "max_supply": 1000000000000,
+      "market_fee_percent": 0,
+      "max_market_fee": 1000000000000000,
+      "issuer_permissions": 0,
+      "flags": 0,
+      "core_exchange_rate": {
+        "base": { "amount": 1, "asset_id": "1.3.0" },
+        "quote": { "amount": 1, "asset_id": "1.3.0" }
+      },
+      "whitelist_authorities": [],
+      "blacklist_authorities": [],
+      "whitelist_markets": [],
+      "blacklist_markets": [],
+      "description": "",
+      "extensions": {}
+    },
+    "dynamic_asset_data_id": "2.3.0",
+    "creation_block_num": 0,
+    "creation_time": "2026-08-18T17:45:00",
+    "total_in_collateral": 0
+  },
+  "objects": [
+    {
+      "id": "1.6.1",
+      "witness_account": "1.2.102",
+      "last_aslot": 1318410,
+      "signing_key": "BTS66b8UMB5rbMPGkGyS3sfj7do8ZcGrRkC4W2hs2o1DE4EHvWa7L",
+      "pay_vb": "1.13.1",
+      "vote_id": "1:0",
+      "total_votes": 0,
+      "url": "",
+      "total_missed": 1,
+      "last_confirmed_block_num": 1318405
+    },
+    {
+      "id": "2.3.0",
+      "current_supply": 409335206875,
+      "confidential_supply": 0,
+      "accumulated_fees": 0,
+      "accumulated_collateral_fees": 0,
+      "fee_pool": 0
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1.2.3",
+      "membership_expiration_date": "2106-02-07T06:28:15",
+      "registrar": "1.2.3",
+      "referrer": "1.2.3",
+      "lifetime_referrer": "1.2.3",
+      "network_fee_percentage": 0,
+      "lifetime_referrer_fee_percentage": 10000,
+      "referrer_rewards_percentage": 0,
+      "name": "null-account",
+      "owner": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [],
+        "address_auths": []
+      },
+      "active": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [],
+        "address_auths": []
+      },
+      "options": {
+        "memo_key": "BTS1111111111111111111111111111111114T1Anm",
+        "voting_account": "1.2.5",
+        "num_witness": 0,
+        "num_committee": 0,
+        "votes": [],
+        "extensions": []
+      },
+      "num_committee_voted": 52384,
+      "statistics": "2.6.3",
+      "whitelisting_accounts": [],
+      "blacklisting_accounts": [],
+      "whitelisted_accounts": [],
+      "blacklisted_accounts": [],
+      "owner_special_authority": [0, {}],
+      "active_special_authority": [0, {}],
+      "top_n_control_flags": 0,
+      "creation_block_num": 0,
+      "creation_time": "2026-08-18T17:45:00"
+    },
+    {
+      "id": "1.2.102",
+      "membership_expiration_date": "2106-02-07T06:28:15",
+      "registrar": "1.2.102",
+      "referrer": "1.2.102",
+      "lifetime_referrer": "1.2.102",
+      "network_fee_percentage": 2000,
+      "lifetime_referrer_fee_percentage": 8000,
+      "referrer_rewards_percentage": 0,
+      "name": "wit01",
+      "owner": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          ["BTS66b8UMB5rbMPGkGyS3sfj7do8ZcGrRkC4W2hs2o1DE4EHvWa7L", 1]
+        ],
+        "address_auths": []
+      },
+      "active": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          ["BTS7oViQdGnUqez4EiDAYidCwDxAt7ES2Tmd8uqQs3MTLPyV4rSBp", 1]
+        ],
+        "address_auths": []
+      },
+      "options": {
+        "memo_key": "BTS7oViQdGnUqez4EiDAYidCwDxAt7ES2Tmd8uqQs3MTLPyV4rSBp",
+        "voting_account": "1.2.5",
+        "num_witness": 0,
+        "num_committee": 0,
+        "votes": [],
+        "extensions": []
+      },
+      "num_committee_voted": 0,
+      "statistics": "2.6.102",
+      "whitelisting_accounts": [],
+      "blacklisting_accounts": [],
+      "whitelisted_accounts": [],
+      "blacklisted_accounts": [],
+      "owner_special_authority": [0, {}],
+      "active_special_authority": [0, {}],
+      "top_n_control_flags": 0,
+      "creation_block_num": 0,
+      "creation_time": "2026-08-18T17:45:00"
+    }
+  ],
+  "head": {
+    "id": "2.1.0",
+    "head_block_number": 1318407,
+    "head_block_id": "00141e07944bea68ff9c644b8154a3f26ded0648",
+    "time": "2026-10-03T15:11:03",
+    "current_witness": "1.6.3",
+    "next_maintenance_time": "2026-10-03T16:00:00",
+    "last_vote_tally_time": "2026-10-03T15:00:00",
+    "last_budget_time": "2026-10-03T15:00:00",
+    "witness_budget": 0,
+    "total_pob": 0,
+    "total_inactive": 0,
+    "accounts_registered_this_interval": 0,
+    "recently_missed_count": 0,
+    "current_aslot": 1318412,
+    "recent_slots_filled": "340282366920938463463374607431768211455",
+    "dynamic_flags": 0,
+    "last_irreversible_block_num": 1318405,
+    "maintenance_seed": 2929126833222598784
+  }
+}
