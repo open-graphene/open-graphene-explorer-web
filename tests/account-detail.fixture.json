@@ -1,0 +1,204 @@
+{
+  "full": {
+    "account": {
+      "id": "1.2.136",
+      "membership_expiration_date": "1970-01-01T00:00:00",
+      "registrar": "1.2.100",
+      "referrer": "1.2.100",
+      "lifetime_referrer": "1.2.100",
+      "network_fee_percentage": 2000,
+      "lifetime_referrer_fee_percentage": 3000,
+      "referrer_rewards_percentage": 0,
+      "name": "acta-13bbcc46590ab6997bb4de40b86127a7",
+      "owner": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          ["BTS6fwm9frouzsxSzLFN2DRKKe6ESpipo1Kw6kkshdpWWRV5zT9EN", 1]
+        ],
+        "address_auths": []
+      },
+      "active": {
+        "weight_threshold": 1,
+        "account_auths": [],
+        "key_auths": [
+          ["BTS8VHYNYyguEk282kxsHJBAQGzvGGfCM7i1xUi1ZBStLN7bP1Hjs", 1]
+        ],
+        "address_auths": []
+      },
+      "options": {
+        "memo_key": "BTS5V89TttkzyjgxvWEZ6yer4eKbXDW9raQufRPtvpCMzheNMUt1t",
+        "voting_account": "1.2.5",
+        "num_witness": 0,
+        "num_committee": 0,
+        "votes": [],
+        "extensions": []
+      },
+      "num_committee_voted": 0,
+      "statistics": "2.6.136",
+      "whitelisting_accounts": [],
+      "blacklisting_accounts": [],
+      "whitelisted_accounts": [],
+      "blacklisted_accounts": [],
+      "owner_special_authority": [0, {}],
+      "active_special_authority": [0, {}],
+      "top_n_control_flags": 0,
+      "creation_block_num": 3350,
+      "creation_time": "2026-08-18T20:33:06"
+    },
+    "statistics": {
+      "id": "2.6.136",
+      "owner": "1.2.136",
+      "name": "acta-13bbcc46590ab6997bb4de40b86127a7",
+      "most_recent_op": "2.9.216",
+      "total_ops": {
+        "isLosslessNumber": true,
+        "value": "4"
+      },
+      "removed_ops": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "total_core_in_orders": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "total_core_inactive": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "total_core_pob": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "total_core_pol": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "total_pob_value": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "total_pol_value": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "core_in_balance": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "has_cashback_vb": false,
+      "is_voting": false,
+      "last_vote_time": "1970-01-01T00:00:00",
+      "vp_all": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "vp_active": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "vp_committee": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "vp_witness": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "vp_worker": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "vote_tally_time": "1970-01-01T00:00:00",
+      "lifetime_fees_paid": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "pending_fees": {
+        "isLosslessNumber": true,
+        "value": "0"
+      },
+      "pending_vested_fees": {
+        "isLosslessNumber": true,
+        "value": "0"
+      }
+    },
+    "registrar_name": "swaplock",
+    "referrer_name": "swaplock",
+    "lifetime_referrer_name": "swaplock",
+    "votes": [],
+    "balances": [],
+    "vesting_balances": [],
+    "limit_orders": [],
+    "call_orders": [],
+    "settle_orders": [],
+    "proposals": [],
+    "assets": [],
+    "withdraws_from": [],
+    "withdraws_to": [],
+    "htlcs_from": [],
+    "htlcs_to": [],
+    "more_data_available": {
+      "balances": false,
+      "vesting_balances": false,
+      "limit_orders": false,
+      "call_orders": false,
+      "settle_orders": false,
+      "proposals": false,
+      "assets": false,
+      "withdraws_from": false,
+      "withdraws_to": false,
+      "htlcs_from": false,
+      "htlcs_to": false
+    }
+  },
+  "asset": {
+    "id": "1.3.0",
+    "symbol": "BTS",
+    "precision": 5,
+    "issuer": "1.2.3",
+    "options": {
+      "max_supply": {
+        "isLosslessNumber": true,
+        "value": "1000000000000"
+      },
+      "market_fee_percent": 0,
+      "max_market_fee": {
+        "isLosslessNumber": true,
+        "value": "1000000000000000"
+      },
+      "issuer_permissions": 0,
+      "flags": 0,
+      "core_exchange_rate": {
+        "base": {
+          "amount": {
+            "isLosslessNumber": true,
+            "value": "1"
+          },
+          "asset_id": "1.3.0"
+        },
+        "quote": {
+          "amount": {
+            "isLosslessNumber": true,
+            "value": "1"
+          },
+          "asset_id": "1.3.0"
+        }
+      },
+      "whitelist_authorities": [],
+      "blacklist_authorities": [],
+      "whitelist_markets": [],
+      "blacklist_markets": [],
+      "description": "",
+      "extensions": {}
+    },
+    "dynamic_asset_data_id": "2.3.0",
+    "creation_block_num": 0,
+    "creation_time": "2026-08-18T17:45:00",
+    "total_in_collateral": {
+      "isLosslessNumber": true,
+      "value": "0"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@open-graphene/explorer-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "pnpm run build:dependencies && vite",
+    "build": "pnpm run typecheck && vite build",
+    "typecheck": "pnpm run build:dependencies && tsr generate && tsc --noEmit",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:dependencies": "pnpm --filter \"@open-graphene/explorer-web^...\" --recursive --if-present run build",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:browser": "pnpm build && node tests/browser.mjs",
+    "test:assets:browser": "pnpm build && node tests/assets.browser.mjs",
+    "test:accounts:browser": "pnpm build && node tests/accounts.browser.mjs",
+    "test:witnesses:browser": "pnpm build && node tests/witnesses.browser.mjs",
+    "test:committee:browser": "pnpm build && node tests/committee.browser.mjs",
+    "test:account:browser": "pnpm build && node tests/account-detail.browser.mjs",
+    "test:navigation:live": "pnpm build && node tests/navigation.browser.mjs"
+  },
+  "dependencies": {
+    "@open-graphene/chain-swaplock-api": "workspace:*",
+    "@open-graphene/chain-swaplock-bindings": "workspace:*",
+    "@open-graphene/chain-swaplock-react": "workspace:*",
+    "@open-graphene/core": "workspace:*",
+    "@open-graphene/fc": "workspace:*",
+    "@open-graphene/primitives": "workspace:*",
+    "@swaplock-query/api-ts-client": "workspace:*",
+    "@tanstack/react-query": "^5.104.0",
+    "@tanstack/react-router": "^1.170.41",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tanstack/router-cli": "1.167.40",
+    "@tanstack/router-plugin": "^1.168.42",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vanilla-extract/css": "^1.21.2",
+    "@vanilla-extract/vite-plugin": "^5.2.6",
+    "@vitejs/plugin-react": "^6.1.1",
+    "playwright": "1.62.1",
+    "prettier": "3.9.9",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.2"
+  }
+}
