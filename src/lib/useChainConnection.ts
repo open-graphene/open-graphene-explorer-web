@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { SwaplockClient } from "@open-graphene/chain-swaplock-api";
+import { CHAIN } from "@open-graphene/chain-swaplock-bindings";
 import { nodeUrl } from "./config";
 
 type Connection =
@@ -21,6 +22,7 @@ export function useChainConnection() {
     async function connect() {
       try {
         const client = await SwaplockClient.connect(nodeUrl, {
+          expectedChainId: CHAIN.chainId,
           timeoutMs: 8000,
         });
         if (disposed) {
