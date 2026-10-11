@@ -1,3 +1,4 @@
+import { sourceResolution } from "@mirrorboards-utils/mirrorboards-utils-workspace-source/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 import react from "@vitejs/plugin-react";
@@ -13,6 +14,7 @@ export default defineConfig({
     ],
   },
   plugins: [
+    sourceResolution(),
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     vanillaExtractPlugin(),
     react(),

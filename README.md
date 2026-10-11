@@ -108,13 +108,18 @@ access, use generated SDK functions rather than handwritten endpoint calls.
 The application owns and closes the chain client. `SwaplockProvider` runs inside
 `QueryClientProvider`; Vite deduplicates React and TanStack Query across nested SDK workspaces.
 
-### Local SDK build
+### Local SDK sources
 
-`pnpm dev`, `pnpm typecheck` and `pnpm build` build the application's workspace
-dependencies first because Open Graphene exports compiled `dist/` artifacts.
-Run `pnpm build:dependencies` explicitly when needed. If generated SDK sources
-are absent in a fresh Open Graphene checkout, follow that SDK's `pnpm generate`
-instructions before building; generation requires its Rust toolchain/specs.
+`pnpm dev`, `pnpm typecheck` and `pnpm build` consume Open Graphene's TypeScript
+sources through the shared `workspace-source` condition. No SDK `dist` build
+is needed before development. Vite watches those sources for changes.
+
+If generated SDK sources are absent in a fresh Open Graphene checkout, follow
+that SDK's `pnpm generate` instructions; generation requires its Rust
+toolchain/specs. Publishing an SDK still requires its distribution build.
+
+From the main workspace, `node mirrorboards-utils/mirrorboards-utils-workspace-source/verify-source.mjs @open-graphene/explorer-web`
+checks the application in an isolated copy without library `dist` directories.
 
 ## Implemented blocks screen
 

@@ -8,13 +8,12 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "pnpm run build:dependencies && vite",
-    "build": "pnpm run typecheck && vite build",
-    "typecheck": "pnpm run build:dependencies && tsr generate && tsc --noEmit",
+    "dev": "workspace-source vite --configLoader native",
+    "build": "pnpm typecheck && workspace-source vite build --configLoader native",
+    "typecheck": "tsr generate && tsc --noEmit",
     "preview": "vite preview",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "build:dependencies": "pnpm --filter \"@open-graphene/explorer-web^...\" --recursive --if-present run build",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:browser": "pnpm build && node tests/browser.mjs",
     "test:assets:browser": "pnpm build && node tests/assets.browser.mjs",
@@ -50,6 +49,7 @@
     "playwright": "1.62.1",
     "prettier": "3.9.9",
     "typescript": "~6.0.3",
-    "vite": "^8.3.2"
+    "vite": "^8.3.2",
+    "@mirrorboards-utils/mirrorboards-utils-workspace-source": "workspace:*"
   }
 }
