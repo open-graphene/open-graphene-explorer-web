@@ -321,7 +321,7 @@ the image. The runtime runs as non-root on port 3000 with SPA navigation fallbac
 no-cache HTML and immutable hashed assets.
 
 Infrastructure is managed by the platform stack at
-`platforms/mirrorboards-platform/networks-platform/stacks/networks-platform-applications/applications-open-graphene-explorer/open-graphene-explorer-host-web`.
+`mirrorboards-platform/mirrorboards-platform/networks-platform/stacks/networks-platform-applications/applications-open-graphene-explorer/open-graphene-explorer-host-web`.
 Its README documents image publication, preview/deployment, checks and rollback.
 TLS and DNS use the existing Mirrorboards gateway and ExternalDNS.
 
